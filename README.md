@@ -1,6 +1,6 @@
 Live Demo :
 <img src="./dist/img/demo.png">
-(https://ibrahimelgibran.github.io/PersonalTemplate/){:target="_blank"}
+(https://ibrahimelgibran.github.io/PersonalTemplate/)
 
 
 
