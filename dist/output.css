@@ -919,7 +919,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .border-primary {
   --tw-border-opacity: 1;
-  border-color: rgb(82 67 172 / var(--tw-border-opacity));
+  border-color: #3c79f5;
 }
 
 .border-slate-200 {
@@ -1360,26 +1360,26 @@ body {
 
 .hover\:border-indigo-400:hover {
   --tw-border-opacity: 1;
-  border-color: rgb(129 140 248 / var(--tw-border-opacity));
+  border-color: #3c79f5;
 }
 
 .hover\:border-primary\/75:hover {
-  border-color: rgb(82 67 172 / 0.75);
+  border-color: #3c79f5;
 }
 
 .hover\:border-primary:hover {
   --tw-border-opacity: 1;
-  border-color: rgb(82 67 172 / var(--tw-border-opacity));
+  border-color: #3c79f5;
 }
 
 .hover\:bg-indigo-400:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(129 140 248 / var(--tw-bg-opacity));
+  background-color: #3c79f5;
 }
 
 .hover\:bg-primary:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(82 67 172 / var(--tw-bg-opacity));
+  background-color: #3c79f5;
 }
 
 .hover\:bg-primary\/75:hover {
