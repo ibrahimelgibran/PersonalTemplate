@@ -120,60 +120,32 @@
 		<div class="container">
 			<div class="flex flex-wrap">
 				<div class="w-full self-center pl-5 md:pl-20 lg:w-1/2">
-					<h1 class="text-base font-semibold" style="color: #3c79f5; " >Hi There👋, I'm
-						<span class="block font-semibold text-dark
-						text-4xl mt-1 lg:text-6xl dark:text-white" >Ibrahim El Gibran</span></h1>
-						<h2 id="typing-effect" class="font-medium text-dark text-lg mb-5 mt-1 lg:text-3xl dark:text-white" style="font-family:'Courier New', Courier, monospace"></h2>
-
-						<script>
-							const texts = ["Mobile Developer", "Web Developer" ];
-							const typingSpeed = 150;
-							let textIndex = 0;
-							let charIndex = 0;
-							let isDeleting = false;
-						
-							function typeWriter() {
-								const currentText = texts[textIndex];
-								if (!isDeleting && charIndex < currentText.length) {
-									document.getElementById("typing-effect").innerHTML += currentText.charAt(charIndex);
-									charIndex++;
-								} else if (isDeleting && charIndex >= 0) {
-									const tempText = currentText.substring(0, charIndex);
-									document.getElementById("typing-effect").innerHTML = tempText;
-									charIndex--;
-								} else {
-									isDeleting = !isDeleting;
-									if (!isDeleting) {
-										textIndex = (textIndex + 1) % texts.length;
-									}
-								}
-								setTimeout(typeWriter, isDeleting ? typingSpeed / 2 : typingSpeed);
-							}
-						
-							// Mulai efek mengetik ketika halaman dimuat
-							window.onload = function() {
-								typeWriter();
-							};
-						</script>
-						
-					</h2>
-					<p
-						class="font-medium text-dark mb-10 leading-relaxed lg:max-w-md mt-10 text-lg dark:text-secondary">
-						I create stunning website for your business, Intermediate experienced in web design and development.</p>
-
-					<a href="#hubungi-saya"
-						class="animate-bounce inline-block text-lg font-medium text-white py-3 px-8 rounded-lg hover:shadow-lg hover:bg-indigo-00 hover:opacity-80 transition duration-300 ease-in-out" style="background-color: #3c79f5;">Download CV 📥</a>
+					<h1 class="text-base font-semibold" style="color: #3c79f5;">Hi There👋, I'm
+						<span class="block font-semibold text-dark text-4xl mt-1 lg:text-6xl dark:text-white">Ibrahim El Gibran</span>
+					</h1>
+					<h2 id="typing-effect" class="font-medium text-dark text-lg mb-5 mt-1 lg:text-3xl dark:text-white" style="font-family:'Courier New', Courier, monospace"></h2>
+	
+					<p class="font-medium text-dark mb-10 leading-relaxed lg:max-w-md mt-10 text-lg dark:text-secondary">I create stunning website for your business, Intermediate experienced in web design and development.</p>
+	
+					<!-- Tombol "Download CV" -->
+					<a href="#hubungi-saya" class="animate-bounce inline-block text-lg font-medium text-white py-3 px-8 rounded-lg hover:shadow-lg hover:bg-indigo-00 hover:opacity-80 transition duration-300 ease-in-out" style="background-color: #3c79f5;">Download CV 📥</a>
+	
+					<!-- JavaScript untuk menangani klik pada tombol -->
+					<script>
+						document.addEventListener("DOMContentLoaded", function() {
+							document.querySelector("#downloadCv").addEventListener("click", function() {
+								window.location.href = "#hubungi-saya";
+							});
+						});
+					</script>
 				</div>
-
+	
 				<div class="w-full md:w-1/2 flex justify-center md:justify-start">
 					<div class="mt-10 relative lg:mt-0 lg:right-0">
-						<img src="dist/img/me.png" alt="Ibrahim El Gibran"
-							class="max-w-full mx-auto rounded-b-full shadow-xl shadow-slate-200/30 relative z-10 dark:shadow-none dark:border-l-2 dark:border-b-2 dark:border-r-2 dark:border-slate-600/40" />
-						<span class="absolute bottom-0 left-1/2 -translate-x-1/2 md:bottom-12 md:scale-125">
+						<img src="dist/img/me.png" alt="Ibrahim El Gibran" class="max-w-full mx-auto rounded-b-full shadow-xl shadow-slate-200/30 relative z-10 dark:shadow-none dark:border-l-2 dark:border-b-2 dark:border-r-2 dark:border-slate-600/40" />
+						<span class="absolute bottom-0 left-1/2 -translate-x-1/2 md:bottom-12 md:scale-125"  style="pointer-events: none;">
 							<svg width="400" height="480" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-								<path fill="#3c79f5"
-									d="M38.1,-42.5C47.3,-28.9,51.2,-14.5,49.3,-1.9C47.4,10.7,39.7,21.3,30.5,28.4C21.3,35.5,10.7,39,-2.7,41.7C-16.1,44.4,-32.2,46.3,-40.2,39.2C-48.3,32.2,-48.4,16.1,-47,1.4C-45.6,-13.3,-42.7,-26.6,-34.7,-40.2C-26.6,-53.8,-13.3,-67.7,0.6,-68.3C14.5,-68.9,28.9,-56.1,38.1,-42.5Z"
-									transform="translate(100 100) scale(1.1)" />
+								<path fill="#3c79f5" d="M38.1,-42.5C47.3,-28.9,51.2,-14.5,49.3,-1.9C47.4,10.7,39.7,21.3,30.5,28.4C21.3,35.5,10.7,39,-2.7,41.7C-16.1,44.4,-32.2,46.3,-40.2,39.2C-48.3,32.2,-48.4,16.1,-47,1.4C-45.6,-13.3,-42.7,-26.6,-34.7,-40.2C-26.6,-53.8,-13.3,-67.7,0.6,-68.3C14.5,-68.9,28.9,-56.1,38.1,-42.5Z" transform="translate(100 100) scale(1.1)" />
 							</svg>
 						</span>
 					</div>
@@ -181,6 +153,7 @@
 			</div>
 		</div>
 	</section>
+	
 	<!-- END: HERO SECTION -->
 
 	<!-- START: ABOUT SECTION -->
